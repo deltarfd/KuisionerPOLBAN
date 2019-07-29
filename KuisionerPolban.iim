@@ -1,0 +1,20 @@
+VERSION BUILD=1005
+TAB T=1
+SET !LOOP 1
+URL GOTO=https://akademik.polban.ac.id/kuisoner/form#step-{{!LOOP}}
+'We use quotation marks for a content with spaces
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[2]/td[4]/div/label[6]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[3]/td[4]/div/label[4]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[4]/td[4]/div/label[4]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[5]/td[4]/div/label[6]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[6]/td[4]/div/label[6]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[7]/td[4]/div/label[5]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[8]/td[4]/div/label[6]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[9]/td[4]/div/label[5]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[10]/td[4]/div/label[4]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[11]/td[4]/div/label[4]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[12]/td[4]/div/label[4]" CONTENT=YES 
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/section/div/div/div/div/table/tbody/tr[13]/td[4]/div/label[6]" CONTENT=YES  
+SET !ENCRYPTION NO
+
+TAG XPATH="//*[@id="step-{{!LOOP}}"]/div/div/button[1]"
